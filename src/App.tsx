@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import RouterIndex from './routes/routerIndex';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1 className='text-3xl font-bold underline text-red-900'>Welcome to the session</h1>
+      <p className='text-4x1 font-semibold text-blue-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quas atque recusandae odit numquam labore aut omnis! Ratione delectus, laudantium molestiae commodi ex perferendis. Reiciendis iure officiis aperiam rem quibusdam?</p>
+      <RouterIndex/>
     </div>
   );
 }
