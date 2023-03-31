@@ -19,3 +19,9 @@ export interface ProductState {
     isError :boolean,
     message:string
 }
+
+export const navLinks = [
+    {linkName:"Smart Phone", link:"/smartphone"},
+    {linkName:"Tablet", link:"/tablet"},
+    {linkName:"Computers", link:"/computers"}
+  ]
