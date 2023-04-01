@@ -13,6 +13,12 @@ export default interface Product {
     images:string[]
 }
 
+export interface ImageT {
+    url: string,
+    alt: string
+}
+
+
 export interface ProductState {
     product:Product[],
     isLoading:boolean,

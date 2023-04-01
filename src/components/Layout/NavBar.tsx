@@ -16,6 +16,7 @@ const NavBar = () => {
 
   const handleSearch = (event:React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value)
+    console.log(event.target.value)
   }
 
   const theme = useTheme()
@@ -28,7 +29,7 @@ const NavBar = () => {
         <h1 className='py-1 text-2xl font-bold text-left text-black md:text-4xl'> B-Shops</h1>
       </Link>
       <div className='px-4'>
-      <input value={search} onClick={()=>handleSearch(e)} className='h-8 px-4 bg-gray-200 rounded outline-none w-60 md:w-80 '/>
+      <input value={search} onChange={handleSearch} className='h-8 px-4 bg-gray-200 rounded outline-none w-60 md:w-80 '/>
       <SearchIcon className='text-gray-400 -ml-14 '/>
       </div>
       <div className='px-4 '>
